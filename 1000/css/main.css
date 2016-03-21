@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+body {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #f8f7e5;
+}
+body header {
+  width: 46.875%;
+  margin: 8.75%  auto 15.625%;
+}
+body section {
+  width: 67.1875%;
+  margin: 0 auto;
+}
+body section ul {
+  zoom: 1;
+}
+body section ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+body section ul li {
+  float: left;
+  width: 26%;
+  box-sizing: border-box;
+}
+body section ul li:nth-child(3n+2) {
+  margin-left: 11%;
+  margin-right: 11%;
+}
+body section ul li a {
+  display: block;
+  background: url("../img/img1.png") no-repeat;
+  background-size: 100%;
+  background-position: center -0.4%;
+}
+body section ul .icon_1 a {
+  background-position: center -0.5%;
+}
+body section ul .icon_2 a {
+  background-position: center 8.65%;
+}
+body section ul .icon_3 a {
+  background-position: center 17.8%;
+}
+body section ul .icon_4 a {
+  background-position: center 26.95%;
+}
+body section ul .icon_5 a {
+  background-position: center 36.1%;
+}
+body section ul .icon_6 a {
+  background-position: center 45.25%;
+}
+body section ul .icon_7 a {
+  background-position: center 54.4%;
+}
+body section ul .icon_8 a {
+  background-position: center 63.55%;
+}
+body section ul .icon_9 a {
+  background-position: center 72.7%;
+}
+body section ul .icon_10 a {
+  background-position: center 81.85%;
+}
+body section ul .icon_11 a {
+  background-position: center 91%;
+}
+body section ul .icon_12 a {
+  background-position: center 100.15%;
+}
+footer {
+  padding: 10px 0;
+  background-color: #f0e9bf;
+  margin: 6.28% 0;
+}
+footer p {
+  width: 67.1875%;
+  margin: 0 auto;
+  font-size: 10px;
+  color: #b9934f;
+}

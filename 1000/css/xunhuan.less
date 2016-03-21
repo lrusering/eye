@@ -1,0 +1,8 @@
+@color:green;
+.loop(@counter) when (@counter <= 12) {
+	&.icon_@{counter} {
+		color: @color + 10 * @counter;
+	}
+	.loop(@counter + 1);
+}
+.loop(5);

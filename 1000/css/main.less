@@ -1,0 +1,55 @@
+ @import "index2";
+ @bg_color:#f8f7e5;
+
+ body{
+ 	max-width: 640px;
+ 	margin: 0 auto;
+ 	background-color: @bg_color;
+ 	header{
+ 		width: 46.875%;
+ 		margin:8.75%  auto 15.625%;
+ 	}
+ 	section{
+ 		width: 67.1875%;
+ 		margin: 0 auto;
+ 		ul{
+ 			.clearfix;
+ 			li{
+ 				float: left;
+ 				width: 26%;
+ 				// border: 1px solid red;
+ 				box-sizing:border-box;
+ 				&:nth-child(3n+2){
+ 					margin-left:11%;
+ 					margin-right: 11%;  
+ 				}
+ 				a{
+ 					display: block;
+ 					background: url("../img/img1.png") no-repeat;
+ 					background-size:100%;
+ 					// background-position: center 8.8% ;
+ 					background-position: center -0.4%;
+ 				}
+ 			}
+ 			.loop(@counter) when (@counter <= 12) {
+ 				.icon_@{counter} a{
+ 					background-position: center -0.5% + (@counter - 1) * 9.15%;
+ 				}
+ 				.loop(@counter + 1);
+ 			}
+ 			.loop(1);
+ 		} 
+ 	}
+
+ }
+ footer{
+ 	padding:10px 0;
+ 	background-color: #f0e9bf;
+ 	margin:6.28% 0;
+ 	p{
+ 		width: 67.1875%;
+ 		margin: 0 auto;
+ 		font-size: 10px;
+ 		color: #b9934f;
+ 	}
+ }
